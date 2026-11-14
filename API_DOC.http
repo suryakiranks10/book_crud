@@ -1,0 +1,40 @@
+#api call for listing books
+###
+GET http://127.0.0.1:8000/books/
+Accept: application/json
+
+#api call for creating books
+###
+POST http://127.0.0.1:8000/books/
+Content-Type: application/json
+
+{
+    "name":"nama",
+    "price":2900,
+    "page_no":34,
+    "author":"nms"
+}
+
+
+#api call for retrieving 
+###
+GET http://127.0.0.1:8000/books/1/
+Accept: application/json
+
+
+#api call for updating
+###
+PUT http://127.0.0.1:8000/books/1/
+Content-Type: application/json
+
+{
+    "name":"vgfd",
+    "price":3500,
+    "page_no":100,
+    "author":"sye"
+}
+
+#api call for deleting 
+###
+DELETE http://127.0.0.1:8000/books/1/
+Accept: application/json
